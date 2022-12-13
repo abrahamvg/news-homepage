@@ -1,19 +1,15 @@
 import './App.css';
-import React, {useEffect, useState} from 'react';
-function App() {
-  const [text, changeText]  = useState(0)
+import React from 'react';
+import Navbar from './compnents/Navbar';
+import News from './compnents/News';
 
-  useEffect(()=>{
-    document.title = `You clicked ${text} times`
-  })
+
+function App() {
 
   return (
     <>
-      <div>
-        This is a random text {text}
-        <br/>
-        <button onClick={()=>{changeText(text + 1)}}>Click Me !!</button>
-      </div>
+      <Navbar/>
+      <News/>
     </>
   );
 }

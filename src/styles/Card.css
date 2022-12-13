@@ -1,0 +1,35 @@
+.card{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 36px;
+}
+.card-contents{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+.card-contents h2{
+    color: hsl(233, 8%, 79%);
+    font-size: 2vw;
+}
+.card-contents a{
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-size: 16px;
+}
+.card-contents a:hover{
+    color: hsl(5, 85%, 63%);
+}
+.card-contents h4{
+    color: hsl(236, 13%, 42%);
+    font-size: 12px;
+}
+.card-cover img{
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
